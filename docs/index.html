@@ -11,262 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../src/asset/blobz.min.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
- 
-    <style>
-      header {
-  position: sticky;
-  top: 0;
-  z-index: 2; /* Mengatur z-index menjadi lebih kecil */
-}
-        .video-container {
-          
-          width: 100%;
-          height: 90vh;
-          overflow: hidden;
-        }
-    
-        .video-container video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          z-index: -2;
-        }
-
-       
-
-.circle {
-  background: white;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  overflow: hidden;
-  animation: morph 3s linear infinite;
-  z-index: 1;
-}
-
-.circle img {
-  width: 100%;
-}
-
-
-@keyframes morph{
-  0%, 100% {
-  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-  }
-  34% {
-    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-  }
-  67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-  }
-}
-
-
-  #about .image-container {
-  position: relative;
-  width: 24rem; /* Atur lebar gambar sesuai kebutuhan */
-  height: 32rem; /* Atur tinggi gambar sesuai kebutuhan */
-  overflow: hidden;
-}
-
-#about .image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1.5s;
-}
-
-#about .image-container img:first-child {
-  opacity: 1;
-}
-
-#about .image-container:hover img {
-  opacity: 1;
-  transition-delay: 0.5s;
-}
-
-#about .image-container:hover img:nth-child(2) {
-  opacity: 1;
-  transition-delay: 1s;
-}
-
-#about .image-container:hover img:nth-child(3) {
-  opacity: 1;
-  transition-delay: 1.5s;
-}
-
-#about .image-container:hover img:nth-child(4) {
-  opacity: 1;
-  transition-delay: 2s;
-}
-#about .image-container-s {
-  position: relative;
-  width: 15rem; /* Atur lebar gambar sesuai kebutuhan */
-  height: 20rem; /* Atur tinggi gambar sesuai kebutuhan */
-  overflow: hidden;
-}
-
-#about .image-container-s img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1.5s;
-}
-
-#about .image-container-s img:first-child {
-  opacity: 1;
-}
-
-#about .image-container-s:hover img {
-  opacity: 1;
-  transition-delay: 0.5s;
-}
-
-#about .image-container-s:hover img:nth-child(2) {
-  opacity: 1;
-  transition-delay: 1s;
-}
-
-#about .image-container-s:hover img:nth-child(3) {
-  opacity: 1;
-  transition-delay: 1.5s;
-}
-
-#about .image-container-s:hover img:nth-child(4) {
-  opacity: 1;
-  transition-delay: 2s;
-}
-
-.blob{
-  width:130px;
-  height:130px;
-  margin:10% auto;
-  position:relative;
-  color:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.blob::before{
-  border:2px solid #fff;
-  border-radius: 58% 42% 48% 53% / 47% 60% 36% 53%;
-  width:100%;
-  height:100%;
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  animation: rotate 16s linear infinite;
-}
-
-.blob::after{
-  border:2px solid #fff;
-  border-radius: 48% 42% 48% 53% / 47% 60% 36% 53%;
-  width:100%;
-  height:100%;
-  background: rgba(244, 166, 166, 0.1);
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  animation: rotate 6s linear infinite;
-}
-@keyframes rotate{
-  0%{
-    transform:rotate(0deg);
-    border-color:#EC0D0D;
-  }
-  50%{
-    border-color:#f4c01c;
-  }
-  100%{
-    transform:rotate(360deg);
-    border-color:#EC0D0D;
-  }
-}
-
-.blob-s{
-  width:50px;
-  height:50px;
-  margin:10% auto;
-  position:relative;
-  color:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.blob-s::before{
-  border:2px solid #fff;
-  border-radius: 58% 42% 48% 53% / 47% 60% 36% 53%;
-  width:100%;
-  height:100%;
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  animation: rotate 16s linear infinite;
-}
-
-.blob-s::after{
-  border:2px solid #fff;
-  border-radius: 48% 42% 48% 53% / 47% 60% 36% 53%;
-  width:100%;
-  height:100%;
-  background: rgba(244, 166, 166, 0.1);
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  animation: rotate 6s linear infinite;
-}
-@keyframes rotate{
-  0%{
-    transform:rotate(0deg);
-    border-color:#EC0D0D;
-  }
-  50%{
-    border-color:#f4c01c;
-  }
-  100%{
-    transform:rotate(360deg);
-    border-color:#EC0D0D;
-  }
-}
-
-.mobile-slider {
-        display: flex;
-        overflow: hidden;
-        border: 6px solid #333232; 
-    border-radius: 10px;
-    }
-
-    .slider-image {
-        width: 100%;
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    .slider-controls {
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .prev-button,
-    .next-button {
-        background-color: #333;
-        color: white;
-        padding: 5px 10px;
-        border: none;
-        border-radius: 5px;
-        margin: 0 5px;
-        cursor: pointer;
-    }
-
-svg{font-weight:bold;height:100%;max-width:600px;}
-      </style>
+     <link rel="stylesheet" href="styletambahan.css">
     <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="https://github.com/aufar05/aufar05.github.io/blob/master/docs/src/asset/logo_IATest.png">
+    <link rel="icon" type="image/png" href="https://github.com/aufar05/aufar05.github.io/blob/master/docs/src/asset/logo_IATest.png?">
 </head>
 <body>
     <header class="sticky top-0 ">
@@ -435,8 +182,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                             
                         </div>
                         <div class="slider-controls">
-                          <i class="prev-button ion ion-chevron-left"  id="prev-button-1"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                          <i class="next-button ion ion-chevron-right" id="next-button-1"><ion-icon name="arrow-forward-outline"></ion-icon></i>
+                          <i class="button ion ion-chevron-left"  id="prev-button-1"><ion-icon name="arrow-back-outline"></ion-icon></i>
+                          <i class="button ion ion-chevron-right" id="next-button-1"><ion-icon name="arrow-forward-outline"></ion-icon></i>
                           
                       </div>
                     </div>
@@ -445,8 +192,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                         <p class="text-gray-700 mb-4 max-w-sm">Kawan Amalan, An Android application to record and track daily sunnah worship.</p>
                         <!-- Tombol Download dan Tombol GitHub -->
                         <div class=" gap-4 grid md:inline-flex">
-                            <a href="https://drive.google.com/file/d/1VmjBWCBVLDOagxJC3V3eEQJWwsEO_xLd/view?usp=sharing" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-md " >Download</a>
-                            <a href="https://github.com/aufar05/flutter_kawan_amalan" class="px-4 py-2 bg-gray-600 text-white rounded-md" target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1VmjBWCBVLDOagxJC3V3eEQJWwsEO_xLd/view?usp=sharing" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" >Download</a>
+                            <a href="https://github.com/aufar05/flutter_kawan_amalan" target="_blank" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105">GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -462,8 +209,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                             <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
                         </div>
                         <div class="slider-controls">
-                          <i class="prev-button ion ion-chevron-left" id="prev-button-2"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                          <i class="next-button ion ion-chevron-right" id="next-button-2"><ion-icon name="arrow-forward-outline"></ion-icon></i>
+                          <i class="button ion ion-chevron-left" id="prev-button-2"><ion-icon name="arrow-back-outline"></ion-icon></i>
+                          <i class="button ion ion-chevron-right" id="next-button-2"><ion-icon name="arrow-forward-outline"></ion-icon></i>
                       </div>
                     </div>
                     <div> <img class="mx-auto" src="../src/asset/icon aplikasi/logoDD.png" alt=""width="100">
@@ -471,8 +218,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                         <p class="text-gray-700 mb-4 max-w-sm">Dompet Diary,Android application for recording and viewing financial reports.</p>
                         <!-- Tombol Download dan Tombol GitHub -->
                         <div class="gap-4 grid md:inline-flex ">
-                            <a href="https://drive.google.com/file/d/1CAS-2zyr2rvtPzrqDaD_o6GPkWFXS3_1/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md" target="_blank">Download</a>
-                            <a href="https://github.com/aufar05/flutter_dompet_diary" class="px-4 py-2 bg-gray-600 text-white rounded-md" target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1CAS-2zyr2rvtPzrqDaD_o6GPkWFXS3_1/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105"  target="_blank">Download</a>
+                            <a href="https://github.com/aufar05/flutter_dompet_diary" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -488,8 +235,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                             <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
                         </div>
                         <div class="slider-controls">
-                          <i class="prev-button ion ion-chevron-left" id="prev-button-3"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                          <i class="next-button ion ion-chevron-right" id="next-button-3"><ion-icon name="arrow-forward-outline"></ion-icon></i>
+                          <i class="button ion ion-chevron-left" id="prev-button-3"><ion-icon name="arrow-back-outline"></ion-icon></i>
+                          <i class="button ion ion-chevron-right" id="next-button-3"><ion-icon name="arrow-forward-outline"></ion-icon></i>
                       </div>
                     </div>
                     <div> <img class="mx-auto" src="../src/asset/icon aplikasi/LogoSF.png" alt=""width="100">
@@ -497,8 +244,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                         <p class="text-gray-700 mb-4 max-w-sm">SeFrekuensi, Android application for finding friends with similar traits.</p>
                         <!-- Tombol Download dan Tombol GitHub -->
                         <div class="gap-4 grid md:inline-flex ">
-                            <a href="https://drive.google.com/file/d/1FH99lvCxQVPj5PDKqrVNsieu9T16FuQN/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md" target="_blank">Download</a>
-                            <a href="https://github.com/aufar05/flutter_seFrekuensi" class="px-4 py-2 bg-gray-600 text-white rounded-md" target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1FH99lvCxQVPj5PDKqrVNsieu9T16FuQN/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105"  target="_blank">Download</a>
+                            <a href="https://github.com/aufar05/flutter_seFrekuensi" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -513,8 +260,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                           <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
                       </div>
                       <div class="slider-controls">
-                        <i class="prev-button ion ion-chevron-left" id="prev-button-4"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                        <i class="next-button ion ion-chevron-right" id="next-button-4"><ion-icon name="arrow-forward-outline"></ion-icon></i>
+                        <i class="button ion ion-chevron-left" id="prev-button-4"><ion-icon name="arrow-back-outline"></ion-icon></i>
+                        <i class="button ion ion-chevron-right" id="next-button-4"><ion-icon name="arrow-forward-outline"></ion-icon></i>
                     </div>
                   </div>
                   <div> <img class="mx-auto" src="../src/asset/icon aplikasi/logoGS.png" alt=""width="100">
@@ -522,8 +269,8 @@ svg{font-weight:bold;height:100%;max-width:600px;}
                       <p class="text-gray-700 mb-4 max-w-sm">Gym Support, Android application to detect gym equipment and provide information about it.</p>
                       <!-- Tombol Download dan Tombol GitHub -->
                       <div class="gap-4 grid md:inline-flex ">
-                          <a href="https://drive.google.com/file/d/1TfFjFLlWuoVXSX6opgh4cTxvFXUJ0MxM/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md" target="_blank">Download</a>
-                          <a href="https://github.com/aufar05/flutter_gym_support" class="px-4 py-2 bg-gray-600 text-white rounded-md" target="_blank">GitHub</a>
+                          <a href="https://drive.google.com/file/d/1TfFjFLlWuoVXSX6opgh4cTxvFXUJ0MxM/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">Download</a>
+                          <a href="https://github.com/aufar05/flutter_gym_support" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">GitHub</a>
                       </div>
                   </div>
               </li>
@@ -549,258 +296,7 @@ svg{font-weight:bold;height:100%;max-width:600px;}
      
       </div>
   </footer>
-
-    <script>
-      // Temukan elemen <dotlottie-player> berdasarkan ID
-      const lottiePlayer = document.getElementById('lottie-player');
-    
-      // Tambahkan event click ke elemen <dotlottie-player>
-      lottiePlayer.addEventListener('click', () => {
-        // Redirect ke alamat Gmail Anda
-        window.location.href = 'mailto:aufar.idzan@gmail.com';
-      });
-    </script>
- <script>
-    function Menu(e){
-      let list = document.querySelector('ul');
-      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-    }
-  </script>
-    <script>
-        const typedTextSpan = document.querySelector(".typed-text");
-        const cursorSpan = document.querySelector(".cursor");
-
-        const textArray = ["Mobile Frontend", "Web Frontend", "Illustration", "Animation"];
-        const typingDelay = 200;
-        const erasingDelay = 100;
-        const newTextDelay = 2000; // Delay between current and next text
-        let textArrayIndex = 0;
-        let charIndex = 0;
-
-        function type() {
-            if (charIndex < textArray[textArrayIndex].length) {
-                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, typingDelay);
-            } else {
-                cursorSpan.classList.remove("typing");
-                setTimeout(erase, newTextDelay);
-            }
-        }
-
-        function erase() {
-            if (charIndex > 0) {
-                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(erase, erasingDelay);
-            } else {
-                cursorSpan.classList.remove("typing");
-                textArrayIndex++;
-                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-                setTimeout(type, typingDelay + 1100);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            // On DOM Load initiate the effect
-            if (textArray.length) setTimeout(type, newTextDelay + 250);
-        });
+<script src="script.js"></script>
   
-        // Mendapatkan lebar layar
-  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-// Mendefinisikan viewBox default dan viewBox untuk ukuran layar kecil
-var defaultViewBox = '15 10 200 40';
-var smallScreenViewBox = '0 10 100 40';
-
-// Mengubah viewBox sesuai dengan ukuran layar
-var svg = document.getElementById('my-svg');
-if (screenWidth < 768) {
-  svg.setAttribute('viewBox', smallScreenViewBox);
-} else {
-  svg.setAttribute('viewBox', defaultViewBox);
-}
-
-// Proyek pertama
-const sliderImages1 = document.querySelectorAll("#mobile-slider-1 .slider-image");
-let currentIndex1 = 0;
-let autoSlideInterval1; // Variabel untuk menyimpan interval slider otomatis
-
-function showImage1(index) {
-    currentIndex1 = index;
-    const translateValue = -currentIndex1 * 100;
-    sliderImages1.forEach((image) => {
-        image.style.transform = `translateX(${translateValue}%)`;
-    });
-}
-
-function startAutoSlide1() {
-    autoSlideInterval1 = setInterval(() => {
-        currentIndex1 = (currentIndex1 + 1) % sliderImages1.length;
-        showImage1(currentIndex1);
-    }, 5000); 
-}
-
-function stopAutoSlide1() {
-    clearInterval(autoSlideInterval1);
-}
-
-// Tombol prev dan next
-document.querySelector("#prev-button-1").addEventListener("click", () => {
-    currentIndex1 = (currentIndex1 - 1 + sliderImages1.length) % sliderImages1.length;
-    showImage1(currentIndex1);
-    stopAutoSlide1(); // Hentikan slider otomatis saat tombol prev ditekan
-    startAutoSlide1(); // Mulai ulang slider otomatis setelah pembaruan slide manual
-});
-
-document.querySelector("#next-button-1").addEventListener("click", () => {
-    currentIndex1 = (currentIndex1 + 1) % sliderImages1.length;
-    showImage1(currentIndex1);
-    stopAutoSlide1(); // Hentikan slider otomatis saat tombol next ditekan
-    startAutoSlide1(); // Mulai ulang slider otomatis setelah pembaruan slide manual
-});
-
-// Memulai otomatis slider pertama
-startAutoSlide1();
-
-// Menambahkan event listener untuk berhenti otomatis slider saat mouse masuk ke proyek
-document.querySelector("#mobile-slider-1").addEventListener("mouseenter", stopAutoSlide1);
-document.querySelector("#mobile-slider-1").addEventListener("mouseleave", startAutoSlide1);
-
-// Anda dapat melakukan hal serupa untuk proyek kedua dan proyek-proyek lainnya jika diperlukan.
-
-
-
-// Proyek kedua
-const sliderImages2 = document.querySelectorAll("#mobile-slider-2 .slider-image");
-let currentIndex2 = 0;
-let autoSlideInterval2;
-
-function showImage2(index) {
-    currentIndex2 = index;
-    const translateValue = -currentIndex2 * 100;
-    sliderImages2.forEach((image) => {
-        image.style.transform = `translateX(${translateValue}%)`;
-    });
-}
-
-function startAutoSlide2() {
-    autoSlideInterval2 = setInterval(() => {
-        currentIndex2 = (currentIndex2 + 1) % sliderImages2.length;
-        showImage2(currentIndex2);
-    }, 5000);
-}
-
-function stopAutoSlide2() {
-    clearInterval(autoSlideInterval2);
-}
-
-document.querySelector("#prev-button-2").addEventListener("click", () => {
-    currentIndex2 = (currentIndex2 - 1 + sliderImages2.length) % sliderImages2.length;
-    showImage2(currentIndex2);
-    stopAutoSlide2();
-    startAutoSlide2();
-});
-
-document.querySelector("#next-button-2").addEventListener("click", () => {
-    currentIndex2 = (currentIndex2 + 1) % sliderImages2.length;
-    showImage2(currentIndex2);
-    stopAutoSlide2();
-    startAutoSlide2();
-});
-
-startAutoSlide2();
-
-document.querySelector("#mobile-slider-2").addEventListener("mouseenter", stopAutoSlide2);
-document.querySelector("#mobile-slider-2").addEventListener("mouseleave", startAutoSlide2);
-
-// Proyek ketiga
-const sliderImages3 = document.querySelectorAll("#mobile-slider-3 .slider-image");
-let currentIndex3 = 0;
-let autoSlideInterval3;
-
-function showImage3(index) {
-    currentIndex3 = index;
-    const translateValue = -currentIndex3 * 100;
-    sliderImages3.forEach((image) => {
-        image.style.transform = `translateX(${translateValue}%)`;
-    });
-}
-
-function startAutoSlide3() {
-    autoSlideInterval3 = setInterval(() => {
-        currentIndex3 = (currentIndex3 + 1) % sliderImages3.length;
-        showImage3(currentIndex3);
-    }, 5000);
-}
-
-function stopAutoSlide3() {
-    clearInterval(autoSlideInterval3);
-}
-
-document.querySelector("#prev-button-3").addEventListener("click", () => {
-    currentIndex3 = (currentIndex3 - 1 + sliderImages3.length) % sliderImages3.length;
-    showImage3(currentIndex3);
-    stopAutoSlide3();
-    startAutoSlide3();
-});
-
-document.querySelector("#next-button-3").addEventListener("click", () => {
-    currentIndex3 = (currentIndex3 + 1) % sliderImages3.length;
-    showImage3(currentIndex3);
-    stopAutoSlide3();
-    startAutoSlide3();
-});
-
-startAutoSlide3();
-
-document.querySelector("#mobile-slider-3").addEventListener("mouseenter", stopAutoSlide3);
-document.querySelector("#mobile-slider-3").addEventListener("mouseleave", startAutoSlide3);
-
-// Proyek keempat
-const sliderImages4 = document.querySelectorAll("#mobile-slider-4 .slider-image");
-let currentIndex4 = 0;
-let autoSlideInterval4;
-
-function showImage4(index) {
-    currentIndex4 = index;
-    const translateValue = -currentIndex4 * 100;
-    sliderImages4.forEach((image) => {
-        image.style.transform = `translateX(${translateValue}%)`;
-    });
-}
-
-function startAutoSlide4() {
-    autoSlideInterval4 = setInterval(() => {
-        currentIndex4 = (currentIndex4 + 1) % sliderImages4.length;
-        showImage4(currentIndex4);
-    }, 5000);
-}
-
-function stopAutoSlide4() {
-    clearInterval(autoSlideInterval4);
-}
-
-document.querySelector("#prev-button-4").addEventListener("click", () => {
-    currentIndex4 = (currentIndex4 - 1 + sliderImages4.length) % sliderImages4.length;
-    showImage4(currentIndex4);
-    stopAutoSlide4();
-    startAutoSlide4();
-});
-
-document.querySelector("#next-button-4").addEventListener("click", () => {
-    currentIndex4 = (currentIndex4 + 1) % sliderImages4.length;
-    showImage4(currentIndex4);
-    stopAutoSlide4();
-    startAutoSlide4();
-});
-
-startAutoSlide4();
-
-document.querySelector("#mobile-slider-4").addEventListener("mouseenter", stopAutoSlide4);
-document.querySelector("#mobile-slider-4").addEventListener("mouseleave", startAutoSlide4);
-    </script>
 </body>
 </html>
