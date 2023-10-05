@@ -250,10 +250,23 @@ document.querySelector("#mobile-slider-4").addEventListener("mouseleave", startA
 document.addEventListener("DOMContentLoaded", function () {
     var preloader = document.querySelector(".preloader");
     var video = document.querySelector("video");
+    var loadingTexts = document.querySelectorAll(".loading-text");
+    var spinner = document.querySelector(".spinner");
 
     video.addEventListener("loadeddata", function () {
-        setTimeout(function () {
-            preloader.style.display = "none";
-        }, 1500);
+        // Sembunyikan spinner segera setelah kata pertama muncul
+        spinner.style.display = "none";
+
+        // Tampilkan teks satu per satu
+        loadingTexts.forEach(function (text, index) {
+            text.style.opacity = "1";
+
+            // Sembunyikan preloader setelah semua teks selesai ditampilkan
+            if (index === loadingTexts.length - 1) {
+                setTimeout(function () {
+                    preloader.style.display = "none";
+                }, 1200); // Atur delay sesuai kebutuhan
+            }
+        });
     });
 });
