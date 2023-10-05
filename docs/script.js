@@ -249,8 +249,11 @@ document.querySelector("#mobile-slider-4").addEventListener("mouseleave", startA
 
 document.addEventListener("DOMContentLoaded", function () {
     var preloader = document.querySelector(".preloader");
+    var video = document.querySelector("video");
 
-    setTimeout(function () {
-        preloader.style.display = "none";
-    }, 1800); 
+    video.addEventListener("loadeddata", function () {
+        setTimeout(function () {
+            preloader.style.display = "none";
+        }, 1200);
+    });
 });
