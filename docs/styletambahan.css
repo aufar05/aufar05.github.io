@@ -259,4 +259,24 @@ svg{font-weight:bold;height:100%;max-width:600px;}
     transform: translateY(5px); /* Add a subtle downward movement when clicked */
   }
   
+
+  @media (max-width: 640px) {
+    .project-item:hover {
+      background-color: transparent !important;
+      transform: none !important;
+    }
+  }
+  
+  .preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    z-index: 9999;
+}
+
+.loading-text {
+    color: white; 
+    margin-right: 10px;
+}
   
