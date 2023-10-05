@@ -249,4 +249,11 @@ startAutoSlide4();
 
 document.querySelector("#mobile-slider-4").addEventListener("mouseenter", stopAutoSlide4);
 document.querySelector("#mobile-slider-4").addEventListener("mouseleave", startAutoSlide4);
-    
+
+document.addEventListener("DOMContentLoaded", function () {
+    var preloader = document.querySelector(".preloader");
+
+    setTimeout(function () {
+        preloader.style.display = "none";
+    }, 1800); // Menampilkan preloader selama 2 detik sebelum menyembunyikannya
+});
