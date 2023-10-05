@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +11,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../src/asset/blobz.min.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <link rel="stylesheet" href="styletambahan.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Halant:wght@500&display=swap" rel="stylesheet">
+<script defer src="app.js"></script>
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="https://github.com/aufar05/aufar05.github.io/blob/master/docs/src/asset/logo_IATest.png?">
 </head>
 <body>
-    <header class="sticky top-0 ">
+  <div class="preloader items-center justify-center flex">
+    <div data-aos="fade-up" data-aos-duration="600"  class="loading-text text-sm sm:text-2xl">Jadi</div>
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"  class="loading-text text-sm sm:text-2xl">Energi Berbuat Baik</div>
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"  class="loading-text text-sm sm:text-2xl">Yang Tak Pernah Henti</div>
+  </div>
+    <header data-aos="fade-down" data-aos-duration="800" data-aos-delay="1800" class="sticky top-0 ">
     
         <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center mx-2"><a href="#" class="text-2xl">Aufar.</a>
@@ -40,12 +50,12 @@
     </header>
     <section id="home" class="video-container pb-20">
         <div class="md:flex md:justify-between h-full md:h-auto">
-          <div class="  md:mt-28 md:ml-32 mt-5">
+          <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="1800" class="md:mt-28 md:ml-32 mt-5">
             <h1 class="text-center md:text-left text-4xl md:text-6xl text-black font-bold mb-4">Hello</h1>
             <p class="text-center md:text-left text-lg md:text-2xl text-black mb-4">It's me Aufar</p>
             <p class="text-center md:text-left text-lg md:text-2xl text-black mb-8">I'm into <span class="typed-text text-yellow-600"></span><span class="cursor">&nbsp;</span></p>
           </div>
-          <div class="md:grid grid-cols-2 gap-4 md:grid-cols-1 place-items-end md:mr-40 md:mt-32 hidden sm:block">
+          <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="1800" class="md:grid grid-cols-2 gap-4 md:grid-cols-1 place-items-end md:mx-24 md:mt-32 hidden sm:block lg:mx-40">
             <h2 class="text-3xl relative left-10  hidden md:block z-[-1]">Find me on</h2>
             <div class="circle">
               <a href="https://www.instagram.com/aizan00_" target="_blank">
@@ -56,15 +66,15 @@
               <a href="https://www.linkedin.com/in/idzan-aufar-496426224" target="_blank">
                   <img src="../src/asset/likedIn.png" alt="LinkedIn Profile">
               </a>
-          </div>
-          <div class="circle">
+            </div>
+            <div class="circle">
               <a href="https://github.com/aufar05" target="_blank">
                   <img src="../src/asset/gitHub.png" alt="GitHub Profile">
               </a>
-          </div>
+            </div>
           </div>
           
-          <div class="flex place-content-center sm:hidden  absolute inset-x-0 -bottom-14 gap-4 ">
+          <div data-aos="fade-up" data-aos-duration="1000"   class="flex place-content-center sm:hidden  absolute inset-x-0 -bottom-14 gap-4 ">
             <h2 class="text-2xl  hidden md:block z-">Find me on</h2>
             <div class="circle "><a href="https://www.instagram.com/aizan00_" target="_blank">
               <img src="../src/asset/iconIg.png" alt="Instagram"></a>
@@ -80,14 +90,14 @@
               </a>
           </div>
         </div>
-        <video autoplay loop muted>
+        <video data-aos="fade-up" data-aos-duration="800" data-aos-delay="1800" autoplay loop muted>
           <source src="../src/asset/background-landscape.mp4" type="video/mp4">
         </video>
       </section>
     
-      <section id="about" class="py-20  px-8   ">
+      <section id="about" class="py-20  px-8   " style="overflow-x: hidden">
         <div class="md:flex grid md:items-start  items-center" >
-        <div class="max-w-md mr-8">
+        <div data-aos="zoom-in" data-aos-duration="1000"  class="max-w-md mr-8">
           <div class="image-container hidden md:block z-1 rounded-full">
             <img src="../src/asset/AboutMe1.jpg" alt="">
             <img src="../src/asset/AboutMe2.jpg" alt="">
@@ -96,7 +106,7 @@
           </div>
         </div>
         <div>
-          <div>
+          <div data-aos="zoom-out" data-aos-duration="1000">
             <svg id="my-svg" class="" viewBox="20 10 200 40">
               <defs>
                 <linearGradient id="gradient">
@@ -122,38 +132,38 @@
               <text text-anchor="middle" x="50" y="35" font-size="14" fill="url(#wave)" fill-opacity="1">About Me</text>
             </svg>
           </div>
-          <div class="pb-10 ">
-            <div class="image-container-s block md:hidden rounded-full mx-auto  ">
+          <div  class="pb-10  ">
+            <div data-aos="zoom-in" data-aos-duration="1000"  class="image-container-s block md:hidden rounded-full mx-auto  ">
               <img src="../src/asset/AboutMe1.jpg" alt="">
               <img src="../src/asset/AboutMe2.jpg" alt="">
               <img src="../src/asset/AboutMe3.jpg" alt="">
               <img src="../src/asset/AboutMe4.jpg" alt="">
             </div>
           </div>
-          <p class="text-lg">Hey! I'm Idzan Aufar, a fresh graduate currently residing in Jakarta. I have a strong passion for mobile programming frontend side, particularly utilizing the Flutter framework. I'm also interested in web development, employing Tailwind CSS as the frontend framework. Moreover, I have some experience in design using Photoshop.</p>
-          <p class="text-lg">I thrive on continuous learning and eagerly embrace new challenges in this ever-evolving industry. If you'd like to have a chat or collaborate, feel free to reach out. Thanks for visiting my profile!</p>
+          <p data-aos="fade-right" data-aos-duration="1000" class="text-lg font-Nunito ">Hey! I'm Idzan Aufar, a fresh graduate currently residing in Jakarta. I have a strong passion for mobile programming frontend side, particularly utilizing the Flutter framework. I'm also interested in web development, employing Tailwind CSS as the frontend framework. Moreover, I have some experience in design using Photoshop.</p>
+          <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" class="text-lg font-Nunito">I thrive on continuous learning and eagerly embrace new challenges in this ever-evolving industry. If you'd like to have a chat or collaborate, feel free to reach out. Thanks for visiting my profile!</p>
         </div>
       </div>
-       <h2 class="font-semibold md:block  text-center text-2xl  hidden mt-10 -mb-12">My Skill</h2>    
+       <h2 data-aos="fade-down" data-aos-duration="1000" class="font-semibold md:block  text-center text-2xl  hidden mt-10 -mb-12">My Skill</h2>    
        <div class=" md:flex hidden">   
-        <div class="blob"><img class="w-20 h-20" src="../src/asset/htmlIcon.png" alt=""></div>
-        <div class="blob "><img class="w-20 h-20" src="../src/asset/cssIcon.png" alt=""></div>
-        <div class="blob "><img class="w-16 h-16" src="../src/asset/jsIcon.png" alt=""></div>
-        <div class="blob "><img class="w-20 h-20" src="../src/asset/tailwindIcon.png" alt=""></div>
-        <div class="blob "><img class="w-16 h-16" src="../src/asset/flutterIcon.png" alt=""></div>
+        <div data-aos="zoom-in" data-aos-duration="1000"  class="blob"><img class="w-20 h-20" src="../src/asset/htmlIcon.png" alt=""></div>
+        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="250" class="blob "><img class="w-20 h-20" src="../src/asset/cssIcon.png" alt=""></div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="blob "><img class="w-16 h-16" src="../src/asset/jsIcon.png" alt=""></div>
+        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="750" class="blob "><img class="w-20 h-20" src="../src/asset/tailwindIcon.png" alt=""></div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" class="blob "><img class="w-16 h-16" src="../src/asset/flutterIcon.png" alt=""></div>
         
        </div>
       </div>
 
       <div class="md:hidden grid text-center my-5"> 
-          <h2 class="font-semibold">My Skill</h2>        
+          <h2 data-aos="fade-down" data-aos-duration="1000" class="font-semibold ">My Skill</h2>        
           
         <div class=" md:hidden flex">
-         <div class="blob-s"><img class="w-10 h-10" src="../src/asset/htmlIcon.png" alt=""></div>
-         <div class="blob-s "><img class="w-10 h-10" src="../src/asset/cssIcon.png" alt=""></div>
-         <div class="blob-s "><img class="w-8 h-8" src="../src/asset/jsIcon.png" alt=""></div>
-         <div class="blob-s "><img class="w-10 h-10" src="../src/asset/tailwindIcon.png" alt=""></div>
-         <div class="blob-s "><img class="w-8 h-8" src="../src/asset/flutterIcon.png" alt=""></div>
+         <div data-aos="zoom-in" data-aos-duration="1000" class="blob-s"><img class="w-10 h-10" src="../src/asset/htmlIcon.png" alt=""></div>
+         <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="250" class="blob-s "><img class="w-10 h-10" src="../src/asset/cssIcon.png" alt=""></div>
+         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="blob-s "><img class="w-8 h-8" src="../src/asset/jsIcon.png" alt=""></div>
+         <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="750" class="blob-s "><img class="w-10 h-10" src="../src/asset/tailwindIcon.png" alt=""></div>
+         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" class="blob-s "><img class="w-8 h-8" src="../src/asset/flutterIcon.png" alt=""></div>
         </div>
           
       </div>
@@ -166,11 +176,13 @@
     
       <section id="portfolio" class="py-20 bg-gray-100">
         <div class="content">
-            <h2 class="text-center text-3xl font-semibold mb-10">Portfolio</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000"  class="text-center text-3xl font-semibold mb-10">Portfolio</h2>
             <!-- Daftar projek Anda akan datang di sini -->
-            <ul class="project-list grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 mx-auto text-center max-w-max">
+            <ul class="project-list grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 mx-auto text-center max-w-max px-5">
                 <!-- Setiap projek akan menjadi satu elemen <li> -->
-                <li class="project-item border border-gray-300 rounded-lg p-4 flex items-center">
+                  <li data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1500" class="project-item border sm:hover:none bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:scale-105 transition-transform duration-300">
                     <!-- Mockup mobile phone -->
                     <div class="mobile-mockup max-w-[15rem] mr-8 relative">
                         <div class="mobile-slider" id="mobile-slider-1">
@@ -179,26 +191,29 @@
                             <img class="slider-image" src="../src/asset/ss_aplikasi/amalanIsi.jpg" alt="Project Screenshot">
                             <img class="slider-image" src="../src/asset/ss_aplikasi/laporanIsi.jpg" alt="Project Screenshot">
                             <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
-                            
                         </div>
                         <div class="slider-controls">
-                          <i class="button ion ion-chevron-left"  id="prev-button-1"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                          <i class="button ion ion-chevron-right" id="next-button-1"><ion-icon name="arrow-forward-outline"></ion-icon></i>
-                          
-                      </div>
+                            <i class="button ion ion-chevron-left" id="prev-button-1"><ion-icon name="arrow-back-outline"></ion-icon></i>
+                            <i class="button ion ion-chevron-right" id="next-button-1"><ion-icon name="arrow-forward-outline"></ion-icon></i>
+                        </div>
                     </div>
-                    <div>     <img class="mx-auto" src="../src/asset/icon aplikasi/logoKA.png" alt=""width="100">
-                        <!-- Penjelasan singkat --><h2 class="text-black-100 mb-4 text-xl">Kawan Amalan</h2>
-                        <p class="text-gray-700 mb-4 max-w-sm">Kawan Amalan, An Android application to record and track daily sunnah worship.</p>
+                    <div>
+                        <img class="mx-auto" src="../src/asset/icon aplikasi/logoKA.png" alt="" width="100">
+                        <!-- Penjelasan singkat -->
+                        <h2 class="text-black-100 mb-4 font-Halant text-xl">Kawan Amalan</h2>
+                        <p class="text-gray-700 mb-4 max-w-sm font-Nunito">Kawan Amalan, An Android application to record and track daily sunnah worship.</p>
                         <!-- Tombol Download dan Tombol GitHub -->
-                        <div class=" gap-4 grid md:inline-flex">
-                            <a href="https://drive.google.com/file/d/1VmjBWCBVLDOagxJC3V3eEQJWwsEO_xLd/view?usp=sharing" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" >Download</a>
+                        <div class="gap-4 grid md:inline-flex">
+                            <a href="https://drive.google.com/file/d/1VmjBWCBVLDOagxJC3V3eEQJWwsEO_xLd/view?usp=sharing" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105">Download</a>
                             <a href="https://github.com/aufar05/flutter_kawan_amalan" target="_blank" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105">GitHub</a>
                         </div>
                     </div>
                 </li>
+                
                 <!-- Anda dapat menambahkan lebih banyak elemen <li> untuk projek lainnya -->
-                <li class="project-item border border-gray-300 rounded-lg p-4 flex items-center">
+                  <li data-aos="flip-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1500" data-aos-delay="200" class="project-item border bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:scale-105 transition-transform duration-300">
                     <!-- Mockup mobile phone -->
                     <div class="mobile-mockup max-w-[15rem] mr-8 relative">
                         <div class="mobile-slider" id="mobile-slider-2">
@@ -214,8 +229,8 @@
                       </div>
                     </div>
                     <div> <img class="mx-auto" src="../src/asset/icon aplikasi/logoDD.png" alt=""width="100">
-                        <!-- Penjelasan singkat --> <h2 class="text-black-100 mb-4 text-xl">Dompet Diary</h2>
-                        <p class="text-gray-700 mb-4 max-w-sm">Dompet Diary,Android application for recording and viewing financial reports.</p>
+                        <!-- Penjelasan singkat --> <h2 class="text-black-100 mb-4 font-Halant text-xl">Dompet Diary</h2>
+                        <p class="text-gray-700 mb-4 font-Nunito max-w-sm">Dompet Diary,Android application for recording and viewing financial reports.</p>
                         <!-- Tombol Download dan Tombol GitHub -->
                         <div class="gap-4 grid md:inline-flex ">
                             <a href="https://drive.google.com/file/d/1CAS-2zyr2rvtPzrqDaD_o6GPkWFXS3_1/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105"  target="_blank">Download</a>
@@ -224,7 +239,9 @@
                     </div>
                 </li>
                 
-              <li class="project-item border border-gray-300 rounded-lg p-4 flex items-center">
+                <li data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500"  class="project-item border bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:scale-105 transition-transform duration-300">
                     <!-- Mockup mobile phone -->
                     <div class="mobile-mockup max-w-[15rem] mr-8 relative">
                         <div class="mobile-slider" id="mobile-slider-3">
@@ -240,8 +257,8 @@
                       </div>
                     </div>
                     <div> <img class="mx-auto" src="../src/asset/icon aplikasi/LogoSF.png" alt=""width="100">
-                        <!-- Penjelasan singkat --> <h2 class="text-black-100 mb-4 text-xl">SeFrekuensi</h2>
-                        <p class="text-gray-700 mb-4 max-w-sm">SeFrekuensi, Android application for finding friends with similar traits.</p>
+                        <!-- Penjelasan singkat --> <h2 class="text-black-100 font-Halant mb-4 text-xl">SeFrekuensi</h2>
+                        <p class="text-gray-700 mb-4 font-Nunito max-w-sm">SeFrekuensi, Android application for finding friends with similar traits.</p>
                         <!-- Tombol Download dan Tombol GitHub -->
                         <div class="gap-4 grid md:inline-flex ">
                             <a href="https://drive.google.com/file/d/1FH99lvCxQVPj5PDKqrVNsieu9T16FuQN/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105"  target="_blank">Download</a>
@@ -249,7 +266,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="project-item border border-gray-300 rounded-lg p-4 flex items-center">
+                <li data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500" data-aos-delay="200" class="project-item border bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:scale-105 transition-transform duration-300">
                   <!-- Mockup mobile phone -->
                   <div class="mobile-mockup max-w-[15rem] mr-8 relative">
                       <div class="mobile-slider" id="mobile-slider-4">
@@ -265,8 +284,8 @@
                     </div>
                   </div>
                   <div> <img class="mx-auto" src="../src/asset/icon aplikasi/logoGS.png" alt=""width="100">
-                      <!-- Penjelasan singkat --> <h2 class="text-black-100 mb-4 text-xl">Gym Support</h2>
-                      <p class="text-gray-700 mb-4 max-w-sm">Gym Support, Android application to detect gym equipment and provide information about it.</p>
+                      <!-- Penjelasan singkat --> <h2 class="text-black-100 font-Halant mb-4 text-xl">Gym Support</h2>
+                      <p class="text-gray-700 mb-4 font-Nunito max-w-sm">Gym Support, Android application to detect gym equipment and provide information about it.</p>
                       <!-- Tombol Download dan Tombol GitHub -->
                       <div class="gap-4 grid md:inline-flex ">
                           <a href="https://drive.google.com/file/d/1TfFjFLlWuoVXSX6opgh4cTxvFXUJ0MxM/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">Download</a>
@@ -279,13 +298,16 @@
     </section>
     
     
-    <section id="contact" class="py-20">
+    <section id="contact" class="py-20 ">
         <!-- Konten Contact -->
         <div class="content">
-          <h2 class="text-center text-3xl font-semibold mb-10">Contact Me</h2>
+          <h2 data-aos="fade-down" data-aos-duration="1000" class="text-center text-3xl font-semibold mb-10">Contact Me</h2>
             
 
-    <dotlottie-player  id="lottie-player" class="mx-auto max-w-md" src="https://lottie.host/86c1960f-f89b-47a1-aae2-f20fff29e3b1/C7JpEuSyQ3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    <dotlottie-player data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0"  id="lottie-player" class="mx-auto max-w-md cursor-pointer" src="https://lottie.host/86c1960f-f89b-47a1-aae2-f20fff29e3b1/C7JpEuSyQ3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         </div>
     </section>
 
@@ -297,6 +319,10 @@
       </div>
   </footer>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({once:true});
+  </script>
   
 </body>
 </html>
