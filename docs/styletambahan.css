@@ -267,7 +267,7 @@ svg{font-weight:bold;height:100%;max-width:600px;}
     }
   }
   
-  .preloader {
+    .preloader {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -278,20 +278,5 @@ svg{font-weight:bold;height:100%;max-width:600px;}
 .loading-text {
     color: white; 
     margin-right: 10px;
-}
-
-.spinner {
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid #007bff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    position: absolute; /* Tambahkan ini */
-    top: 50%; /* Tambahkan ini */
-    left: 50%; /* Tambahkan ini */
-    transform: translate(-50%, -50%); /* Tambahkan ini untuk menengahkan spinner */
 }
   
