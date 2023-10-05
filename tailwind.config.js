@@ -2,7 +2,10 @@
 module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {fontFamily: {
+      Halant: ['Halant ', 'serif'],
+      Nunito :['Nunito Sans', 'sans-serif']
+    }},
   },
   plugins: [],
 }
