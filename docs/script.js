@@ -4,7 +4,7 @@
     
       // Tambahkan event click ke elemen <dotlottie-player>
       lottiePlayer.addEventListener('click', () => {
-        // Redirect ke alamat Gmail Anda
+       
         window.location.href = 'mailto:aufar.idzan@gmail.com';
       });
     
@@ -21,7 +21,7 @@
         const textArray = ["Mobile Developer", "Web Developer", "Ilustrator", "Animation"];
         const typingDelay = 200;
         const erasingDelay = 100;
-        const newTextDelay = 2000; // Delay between current and next text
+        const newTextDelay = 2000; 
         let textArrayIndex = 0;
         let charIndex = 0;
 
@@ -52,7 +52,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            // On DOM Load initiate the effect
+            
             if (textArray.length) setTimeout(type, newTextDelay + 250);
         });
   
@@ -116,9 +116,6 @@ startAutoSlide1();
 // Menambahkan event listener untuk berhenti otomatis slider saat mouse masuk ke proyek
 document.querySelector("#mobile-slider-1").addEventListener("mouseenter", stopAutoSlide1);
 document.querySelector("#mobile-slider-1").addEventListener("mouseleave", startAutoSlide1);
-
-// Anda dapat melakukan hal serupa untuk proyek kedua dan proyek-proyek lainnya jika diperlukan.
-
 
 
 // Proyek kedua
@@ -255,5 +252,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
         preloader.style.display = "none";
-    }, 1800); // Menampilkan preloader selama 2 detik sebelum menyembunyikannya
+    }, 1800); 
 });
