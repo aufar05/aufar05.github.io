@@ -254,6 +254,6 @@ document.addEventListener("DOMContentLoaded", function () {
     video.addEventListener("loadeddata", function () {
         setTimeout(function () {
             preloader.style.display = "none";
-        }, 1200);
+        }, 1500);
     });
 });
