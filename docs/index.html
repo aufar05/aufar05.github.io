@@ -1,327 +1,341 @@
 <!DOCTYPE html>
-<html lang="en" class="!scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../src/asset/blobz.min.css">
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-     <link rel="stylesheet" href="styletambahan.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Halant:wght@500&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="../src/asset/logo_IATest.png?">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idzan Aufar · Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer at Bank Mega Syariah, Jakarta. Spring Boot, Angular and PostgreSQL for Islamic banking operations, plus Flutter side projects.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F3F5F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B1210" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aufar05.github.io/">
+  <meta property="og:title" content="Idzan Aufar · Full-Stack Developer">
+  <meta property="og:description" content="I build the systems behind Islamic banking operations.">
+  <meta property="og:image" content="https://aufar05.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Pixelify+Sans:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="preloader items-center justify-center flex">
-    <div data-aos="fade-up" data-aos-duration="600"  class="loading-text text-sm sm:text-2xl">Thank You</div>
-    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"  class="loading-text text-sm sm:text-2xl">For Visiting</div>
-    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"  class="loading-text text-sm sm:text-2xl">My Site</div>
+<body id="top">
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17M3 21h18M10 7h4M10 11h4M10 15h4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Idzan Aufar, back to top">
+      <span class="brand-mark" aria-hidden="true">ia</span>
+      <span class="brand-name">Idzan Aufar</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul class="nav-list">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-    <header data-aos="fade-down" data-aos-duration="550" data-aos-delay="1400" class="sticky top-0 ">
-    
-        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center mx-2"><a href="#" class="text-2xl">Aufar.</a>
-                <span class="text-3xl cursor-pointer md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                </span>
-                </div>
-    
-    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:p-0 pl:7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-        <li class="mx-4 my-6 md:my-0"><a href="#home" class="text-xl hover:text-yellow-600 duration-500">Home</a></li>
-        <li class="mx-4 my-6 md:my-0"><a href="#about" class="text-xl hover:text-yellow-600 duration-500">About</a></li>
-        <li class="mx-4 my-6 md:my-0"><a href="#portfolio" class="text-xl hover:text-yellow-600 duration-500">Portfolio</a></li>
-        <li class="mx-4 my-6 md:my-0"><a href="#contact" class="text-xl hover:text-yellow-600 duration-500">Contact</a></li>
-    </ul>
-            
-          
-         
-           
-            
-        </nav>
-    </header>
-    <section id="home" class="video-container pb-20">
-        <div class="md:flex md:justify-between h-full md:h-auto">
-          <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="1400" class="md:mt-28 md:ml-32 mt-5">
-            <h1 class="text-center md:text-left text-4xl md:text-6xl text-black font-bold mb-4">Hello</h1>
-            <p class="text-center md:text-left text-lg md:text-2xl text-black mb-4">It's me Aufar</p>
-            <p class="text-center md:text-left text-lg md:text-2xl text-black mb-8">I'm into <span class="typed-text text-yellow-600"></span><span class="cursor">&nbsp;</span></p>
-          </div>
-          <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="1400" class="md:grid grid-cols-2 gap-4 md:grid-cols-1 place-items-end md:mx-24 md:mt-32 hidden sm:block lg:mx-40">
-            <h2 class="text-3xl relative left-10  hidden md:block z-[-1]">Find me on</h2>
-            <div class="circle">
-              <a href="https://www.instagram.com/aizan00_" target="_blank">
-                <img src="../src/asset/iconIg.png" alt="Instagram">
-              </a>
-            </div>
-            <div class="circle">
-              <a href="https://www.linkedin.com/in/idzan-aufar-496426224" target="_blank">
-                  <img src="../src/asset/likedIn.png" alt="LinkedIn Profile">
-              </a>
-            </div>
-            <div class="circle">
-              <a href="https://github.com/aufar05" target="_blank">
-                  <img src="../src/asset/gitHub.png" alt="GitHub Profile">
-              </a>
-            </div>
-          </div>
-          
-          <div data-aos="fade-up" data-aos-duration="1000"   class="flex place-content-center sm:hidden  absolute inset-x-0 -bottom-14 gap-4 ">
-            <h2 class="text-2xl  hidden md:block z-">Find me on</h2>
-            <div class="circle "><a href="https://www.instagram.com/aizan00_" target="_blank">
-              <img src="../src/asset/iconIg.png" alt="Instagram"></a>
-            </div>
-            <div class="circle">
-              <a href="https://www.linkedin.com/in/idzan-aufar-496426224" target="_blank">
-                  <img src="../src/asset/likedIn.png" alt="LinkedIn Profile">
-              </a>
-          </div>
-          <div class="circle">
-              <a href="https://github.com/aufar05" target="_blank">
-                  <img src="../src/asset/gitHub.png" alt="GitHub Profile">
-              </a>
-          </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-card">
+        <p class="pill"><span class="pill-dot" aria-hidden="true"></span>Full-Stack Developer · Jakarta, ID</p>
+        <h1 id="hero-title" class="display">I build the systems behind <span class="accent">Islamic banking</span> operations.</h1>
+        <p class="lead">Developer at Bank Mega Syariah. I work across Spring Boot, Angular and PostgreSQL, turning bulk uploads, approval chains and heavy reports into software that operations teams can rely on.</p>
+        <div class="actions">
+          <!-- TODO: put your CV at docs/assets/cv/Idzan-Aufar-CV.pdf -->
+          <a class="btn btn-primary" href="assets/cv/Idzan-Aufar-CV.pdf" download>
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+          </a>
+          <a class="btn btn-secondary" href="mailto:aufar.idzan@gmail.com">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email me
+          </a>
         </div>
-        <video data-aos="fade-up" data-aos-duration="800" data-aos-delay="1400" autoplay loop muted>
-          <source src="../src/asset/Background-Landscape.m4v" type="video/mp4">
-        </video>
-      </section>
-    
-      <section id="about" class="py-20  px-8   " style="overflow-x: hidden">
-        <div class="md:flex grid md:items-start  items-center" >
-        <div data-aos="zoom-in" data-aos-duration="1000"  class="max-w-md mr-8">
-          <div class="image-container hidden md:block z-1 rounded-full">
-            <img src="../src/asset/AboutMe1.jpg" alt="">
-            <img src="../src/asset/AboutMe2.jpg" alt="">
-            <img src="../src/asset/AboutMe3.jpg" alt="">
-            <img src="../src/asset/AboutMe4.jpg" alt="">
-          </div>
+      </div>
+      <div class="hero-avatar" role="img" aria-label="Pixel-art Idzan waving and introducing himself">
+        <div class="avatar-stage">
+          <p class="bubble b1"><span>Hi, I'm Idzan!</span></p>
+          <p class="bubble b2"><span>I build banking systems.</span></p>
+          <p class="bubble b3"><span>Scroll to see my work</span></p>
+          <div class="avatar-shadow"></div>
+          <div class="avatar-sprite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile bento -->
+    <section class="bento" aria-label="Profile summary">
+      <div class="code-panel">
+        <p class="code-file"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>profile.yml</p>
+<pre class="code" tabindex="0"><code><span class="k">name:</span> Idzan Aufar
+<span class="k">role:</span> Full-Stack Developer
+<span class="k">company:</span> Bank Mega Syariah
+<span class="k">location:</span> Jakarta, ID
+<span class="k">stack:</span>
+  <span class="k">backend:</span>  <span class="p">[</span>Java, Spring Boot<span class="p">]</span>
+  <span class="k">frontend:</span> <span class="p">[</span>Angular, React, TypeScript, Tailwind<span class="p">]</span>
+  <span class="k">mobile:</span>   <span class="p">[</span>Flutter, Dart<span class="p">]</span>
+  <span class="k">data:</span>     <span class="p">[</span>PostgreSQL, MySQL<span class="p">]</span>
+  <span class="k">workflow:</span> <span class="p">[</span>Joget DX7<span class="p">]</span>
+<span class="k">writes:</span> functional specs (FSD)</code></pre>
+      </div>
+
+      <div class="card now-card">
+        <div class="card-top">
+          <p class="eyebrow">Now</p>
+          <svg class="icon icon-muted" aria-hidden="true"><use href="#i-building"/></svg>
+        </div>
+        <div class="now-media">
+          <video class="now-video" muted loop playsinline preload="metadata" poster="assets/video/now-desk-poster.webp" aria-label="Animated illustration of Idzan working at his desk">
+            <source src="assets/video/now-desk.mp4" type="video/mp4">
+          </video>
         </div>
         <div>
-          <div data-aos="zoom-out" data-aos-duration="1000">
-            <svg id="my-svg" class="" viewBox="20 10 200 40">
-              <defs>
-                <linearGradient id="gradient">
-                  <stop color="#7D7463"/>
-                </linearGradient>
-                <pattern id="wave" x="0" y="1" width="100%" height="100%" patternUnits="userSpaceOnUse">
-                  <path id="wavePath" d="M-40 30 
-                    Q-30 28 -20 30 T0 30 T20 30 T40 30 T60 30 T80 30 T100 30 T120 30 
-                    Q130 32 140 30 T160 30 T180 30 T200 30 T220 30 T240 30 T260 30 
-                    V40 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                    <animateTransform
-                      attributeName="transform"
-                      begin="0s"
-                      dur="1.5s"
-                      type="translate"
-                      from="0,0"
-                      to="40,0"
-                      repeatCount="indefinite" />
-                  </path>
-                </pattern>
-              </defs>
-              <text text-anchor="middle" x="50" y="35" font-size="14" fill="#F1C93B" fill-opacity="0.9">About Me</text>
-              <text text-anchor="middle" x="50" y="35" font-size="14" fill="url(#wave)" fill-opacity="1">About Me</text>
-            </svg>
-          </div>
-          <div  class="pb-10  ">
-            <div data-aos="zoom-in" data-aos-duration="1000"  class="image-container-s block md:hidden rounded-full mx-auto  ">
-              <img src="../src/asset/AboutMe1.jpg" alt="">
-              <img src="../src/asset/AboutMe2.jpg" alt="">
-              <img src="../src/asset/AboutMe3.jpg" alt="">
-              <img src="../src/asset/AboutMe4.jpg" alt="">
-            </div>
-          </div>
-          <p data-aos="fade-right" data-aos-duration="1000" class="text-lg font-Nunito ">Hey! I'm Idzan Aufar, a fresh graduate currently residing in Jakarta. I have a strong passion for mobile programming frontend side, particularly utilizing the Flutter framework. I'm also interested in web development, employing Tailwind CSS as the frontend framework. Moreover, I have some experience in design using Photoshop.</p>
-          <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" class="text-lg font-Nunito">I thrive on continuous learning and eagerly embrace new challenges in this ever-evolving industry. If you'd like to have a chat or collaborate, feel free to reach out. Thanks for visiting my profile!</p>
+          <h3 class="now-role">Developer</h3>
+          <p class="now-company">Bank Mega Syariah</p>
+          <!-- TODO: start date -->
+          <p class="now-date">August 2024 — present</p>
         </div>
       </div>
-       <h2 data-aos="fade-down" data-aos-duration="1000" class="font-semibold md:block  text-center text-2xl  hidden mt-10 -mb-12">My Skill</h2>    
-       <div class=" md:flex hidden">   
-        <div data-aos="zoom-in" data-aos-duration="1000"  class="blob"><img class="w-20 h-20" src="../src/asset/htmlIcon.png" alt=""></div>
-        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="250" class="blob "><img class="w-20 h-20" src="../src/asset/cssIcon.png" alt=""></div>
-        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="blob "><img class="w-16 h-16" src="../src/asset/jsIcon.png" alt=""></div>
-        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="750" class="blob "><img class="w-20 h-20" src="../src/asset/tailwindIcon.png" alt=""></div>
-        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" class="blob "><img class="w-16 h-16" src="../src/asset/flutterIcon.png" alt=""></div>
-        
-       </div>
+
+      <div class="card links-card">
+        <p class="eyebrow">Elsewhere</p>
+        <ul class="link-list">
+          <li><a href="https://github.com/aufar05" target="_blank" rel="noopener"><span>GitHub</span><span class="handle">aufar05<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a href="https://www.linkedin.com/in/idzan-aufar-496426224" target="_blank" rel="noopener"><span>LinkedIn</span><span class="handle">idzan-aufar<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a href="mailto:aufar.idzan@gmail.com"><span>Email</span><span class="handle">aufar.idzan<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
       </div>
-
-      <div class="md:hidden grid text-center my-5"> 
-          <h2 data-aos="fade-down" data-aos-duration="1000" class="font-semibold ">My Skill</h2>        
-          
-        <div class=" md:hidden flex">
-         <div data-aos="zoom-in" data-aos-duration="1000" class="blob-s"><img class="w-10 h-10" src="../src/asset/htmlIcon.png" alt=""></div>
-         <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="250" class="blob-s "><img class="w-10 h-10" src="../src/asset/cssIcon.png" alt=""></div>
-         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="blob-s "><img class="w-8 h-8" src="../src/asset/jsIcon.png" alt=""></div>
-         <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="750" class="blob-s "><img class="w-10 h-10" src="../src/asset/tailwindIcon.png" alt=""></div>
-         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" class="blob-s "><img class="w-8 h-8" src="../src/asset/flutterIcon.png" alt=""></div>
-        </div>
-          
-      </div>
-
-      </section>
-      
-      
-      
-      
-    
-      <section id="portfolio" class="py-20 bg-gray-100">
-        <div class="content">
-            <h2 data-aos="fade-up" data-aos-duration="1000"  class="text-center text-3xl font-semibold mb-10">Portfolio</h2>
-            <!-- Daftar projek Anda akan datang di sini -->
-            <ul class="project-list grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 mx-auto text-center max-w-max px-5">
-                <!-- Setiap projek akan menjadi satu elemen <li> -->
-                  <li data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="1000" class="project-item border sm:hover:none bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:!scale-105 transition-transform duration-300">
-                    <!-- Mockup mobile phone -->
-                    <div class="mobile-mockup max-w-[15rem] mr-8 relative">
-                        <div class="mobile-slider" id="mobile-slider-1">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/home.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/adzan.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/amalanIsi.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/laporanIsi.jpg" alt="Project Screenshot">
-                            <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
-                        </div>
-                        <div class="slider-controls">
-                            <i class="button ion ion-chevron-left" id="prev-button-1"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                            <i class="button ion ion-chevron-right" id="next-button-1"><ion-icon name="arrow-forward-outline"></ion-icon></i>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="mx-auto" src="../src/asset/icon aplikasi/logoKA.png" alt="" width="100">
-                        <!-- Penjelasan singkat -->
-                        <h2 class="text-black-100 mb-4 font-Halant text-xl">Kawan Amalan</h2>
-                        <p class="text-gray-700 mb-4 max-w-sm font-Nunito">Kawan Amalan,Android application to record and track daily sunnah worship.</p>
-                        <!-- Tombol Download dan Tombol GitHub -->
-                        <div class="gap-4 grid md:inline-flex">
-                            <a href="https://drive.google.com/file/d/1VmjBWCBVLDOagxJC3V3eEQJWwsEO_xLd/view?usp=sharing" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105">Download</a>
-                            <a href="https://github.com/aufar05/flutter_kawan_amalan" target="_blank" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105">GitHub</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <!-- Anda dapat menambahkan lebih banyak elemen <li> untuk projek lainnya -->
-                  <li data-aos="flip-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="1000" data-aos-delay="200" class="project-item border bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:!scale-105 transition-transform duration-300">
-                    <!-- Mockup mobile phone -->
-                    <div class="mobile-mockup max-w-[15rem] mr-8 relative">
-                        <div class="mobile-slider" id="mobile-slider-2">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/introDd.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/homeDd.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/infoDd.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/laporanDd.jpg" alt="Project Screenshot">
-                            <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
-                        </div>
-                        <div class="slider-controls">
-                          <i class="button ion ion-chevron-left" id="prev-button-2"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                          <i class="button ion ion-chevron-right" id="next-button-2"><ion-icon name="arrow-forward-outline"></ion-icon></i>
-                      </div>
-                    </div>
-                    <div> <img class="mx-auto" src="../src/asset/icon aplikasi/logoDD.png" alt=""width="100">
-                        <!-- Penjelasan singkat --> <h2 class="text-black-100 mb-4 font-Halant text-xl">Dompet Diary</h2>
-                        <p class="text-gray-700 mb-4 font-Nunito max-w-sm">Dompet Diary,Android application for recording and viewing financial reports.</p>
-                        <!-- Tombol Download dan Tombol GitHub -->
-                        <div class="gap-4 grid md:inline-flex ">
-                            <a href="https://drive.google.com/file/d/1CAS-2zyr2rvtPzrqDaD_o6GPkWFXS3_1/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105"  target="_blank">Download</a>
-                            <a href="https://github.com/aufar05/flutter_dompet_diary" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <li data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000"  class="project-item border bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:!scale-105 transition-transform duration-300">
-                    <!-- Mockup mobile phone -->
-                    <div class="mobile-mockup max-w-[15rem] mr-8 relative">
-                        <div class="mobile-slider" id="mobile-slider-3">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/introSF.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/loginSF.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/homeSF.jpg" alt="Project Screenshot">
-                            <img class="slider-image" src="../src/asset/ss_aplikasi/quizSF.jpg" alt="Project Screenshot">
-                            <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
-                        </div>
-                        <div class="slider-controls">
-                          <i class="button ion ion-chevron-left" id="prev-button-3"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                          <i class="button ion ion-chevron-right" id="next-button-3"><ion-icon name="arrow-forward-outline"></ion-icon></i>
-                      </div>
-                    </div>
-                    <div> <img class="mx-auto" src="../src/asset/icon aplikasi/LogoSF.png" alt=""width="100">
-                        <!-- Penjelasan singkat --> <h2 class="text-black-100 font-Halant mb-4 text-xl">SeFrekuensi</h2>
-                        <p class="text-gray-700 mb-4 font-Nunito max-w-sm">SeFrekuensi, Android application for finding friends with similar traits.</p>
-                        <!-- Tombol Download dan Tombol GitHub -->
-                        <div class="gap-4 grid md:inline-flex ">
-                            <a href="https://drive.google.com/file/d/1FH99lvCxQVPj5PDKqrVNsieu9T16FuQN/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105"  target="_blank">Download</a>
-                            <a href="https://github.com/aufar05/flutter_seFrekuensi" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </li>
-                <li data-aos="flip-right"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000" data-aos-delay="200" class="project-item border bg-slate-50 border-slate-200 rounded-xl shadow-md p-4 flex items-center hover:bg-gray-200  hover:!scale-105 transition-transform duration-300">
-                  <!-- Mockup mobile phone -->
-                  <div class="mobile-mockup max-w-[15rem] mr-8 relative">
-                      <div class="mobile-slider" id="mobile-slider-4">
-                          <img class="slider-image" src="../src/asset/ss_aplikasi/homeGS.jpg" alt="Project Screenshot">
-                          <img class="slider-image" src="../src/asset/ss_aplikasi/deteksiGS.jpg" alt="Project Screenshot">
-                          <img class="slider-image" src="../src/asset/ss_aplikasi/alatGS.jpg" alt="Project Screenshot">
-                          <img class="slider-image" src="../src/asset/ss_aplikasi/infoGS.jpg" alt="Project Screenshot">
-                          <!-- Tambahkan gambar lain di sini sesuai kebutuhan -->
-                      </div>
-                      <div class="slider-controls">
-                        <i class="button ion ion-chevron-left" id="prev-button-4"><ion-icon name="arrow-back-outline"></ion-icon></i>
-                        <i class="button ion ion-chevron-right" id="next-button-4"><ion-icon name="arrow-forward-outline"></ion-icon></i>
-                    </div>
-                  </div>
-                  <div> <img class="mx-auto" src="../src/asset/icon aplikasi/logoGS.png" alt=""width="100">
-                      <!-- Penjelasan singkat --> <h2 class="text-black-100 font-Halant mb-4 text-xl">Gym Support</h2>
-                      <p class="text-gray-700 mb-4 font-Nunito max-w-sm">Gym Support, Android application to detect gym equipment and provide information about it.</p>
-                      <!-- Tombol Download dan Tombol GitHub -->
-                      <div class="gap-4 grid md:inline-flex ">
-                          <a href="https://drive.google.com/file/d/1TfFjFLlWuoVXSX6opgh4cTxvFXUJ0MxM/view?usp=sharing" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">Download</a>
-                          <a href="https://github.com/aufar05/flutter_gym_support" class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 focus:scale-105" target="_blank">GitHub</a>
-                      </div>
-                  </div>
-              </li>
-            </ul>
-        </div>
-    </section>
-    
-    
-    <section id="contact" class="py-20 ">
-        <!-- Konten Contact -->
-        <div class="content">
-          <h2 data-aos="fade-down" data-aos-duration="1000" class="text-center text-3xl font-semibold mb-10">Contact Me</h2>
-            
-
-    <dotlottie-player data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0"  id="lottie-player" class="mx-auto max-w-md cursor-pointer" src="https://lottie.host/86c1960f-f89b-47a1-aae2-f20fff29e3b1/C7JpEuSyQ3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-        </div>
     </section>
 
-    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 mx-auto">© 2023 <a href="" class="hover:underline">Idzan Aufar™</a>. All Rights Reserved.
-      </span>
-     
+    <!-- 01 Experience -->
+    <section class="section reveal" id="experience" aria-labelledby="experience-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 — Experience</p>
+          <h2 id="experience-title" class="h2">Where I work now</h2>
+        </div>
+        <p class="section-note">These are internal banking systems, so screens and data stay private. Each case covers the problem, my part in it and the stack.</p>
       </div>
-  </footer>
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({once:true});
-  </script>
-  
+
+      <article class="card role-card">
+        <span class="role-icon" aria-hidden="true"><svg class="icon"><use href="#i-building"/></svg></span>
+        <div class="role-body">
+          <h3 class="role-title">Developer · Bank Mega Syariah</h3>
+          <p>I build and maintain internal applications end to end: Spring Boot services, Angular front ends and low-code workflows. I also write the functional specification documents (FSD) that keep backend and frontend teams aligned.</p>
+        </div>
+        <!-- TODO: start date -->
+        <p class="chip-meta">August 2024 — Present · Jakarta</p>
+      </article>
+
+        <article class="card case">
+                    <p class="small">Financing origination system, from pre-screening to disbursement. My first project, built in sprints under a team lead.</p>
+          <ul class="bullets">
+            <li>Download of generated financing documents, such as contracts and approval letters</li>
+            <li>Document master parameters: admin screens and APIs for types, categories and positions</li>
+            <li>OC module: operation staff prepare SP2, contract and notary documents</li>
+            <li>OM module: operational manager assigns, reviews and approves</li>
+          </ul>
+          <!-- TODO: measurable result -->
+          <p class="impact">Impact: Staff download documents straight from the system, and document types are managed from admin screens, not by developers.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>JHipster</li><li>Spring Boot</li><li>Angular</li><li>PostgreSQL</li><li>JasperReports</li>
+          </ul>
+        </article>
+
+      <div class="cases">
+        <article class="card case">
+          <p class="case-label">Case 02</p>
+          <h3 class="h3">Bulk Account System</h3>
+          <p class="small">Lets operations open savings accounts in bulk from a single Excel upload.</p>
+          <ul class="bullets">
+            <li>Excel batch parsing and row validation with Apache POI</li>
+            <li>Existing-customer matching with Jaro-Winkler and Levenshtein similarity</li>
+            <li>Maker-checker approval with full audit logging</li>
+            <li>Civil-registry (Dukcapil) verification, tested locally against SoapUI mocks</li>
+          </ul>
+          <!-- TODO: measurable result -->
+          <p class="impact">Impact: One Excel upload opens a whole batch of haji savings accounts, with every row validated, matched against existing customers and approved through maker-checker.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>JHipster</li><li>Spring Boot</li><li>Angular</li><li>Apache POI</li>
+          </ul>
+        </article>
+
+        <!-- <article class="card case">
+          <p class="case-label">Case 02</p>
+          <h3 class="h3">Loyalty Rewards Program</h3>
+          <p class="small">A customer-facing rewards microsite, plus an internal app that reports on every draw.</p>
+          <ul class="bullets">
+            <li>Spin-to-win flow with prize results and weekly winner integration</li>
+            <li>HTTP caching and payload interceptors on the Angular client</li>
+            <li>Mobile-first CSS refactor of the microsite</li>
+            <li>Large Excel exports streamed from PostgreSQL with cursor-based fetching</li>
+          </ul>
+          //TODO: measurable result
+          <p class="impact">Impact: [add a measurable result, e.g. rows per export]</p>
+          <ul class="tags" aria-label="Stack">
+            <li>Angular</li><li>Spring Boot</li><li>PostgreSQL</li>
+          </ul>
+        </article> -->
+
+        <article class="card case">
+          <p class="case-label">Case 03</p>
+          <h3 class="h3">Legal Monitoring System</h3>
+          <p class="small">A workflow app for submitting documents to the legal team and tracking every review.</p>
+          <ul class="bullets">
+            <li>Performance audit pinpointing slow datalists, inbox queries and PDF storage</li>
+            <li>Rewrote the reviewer inbox query around the assignment table</li>
+            <li>Fixed assignee-resolution logic in BeanShell scripts</li>
+            <li>PDF annotation plugin so reviewers can mark up documents directly</li>
+          </ul>
+          <!-- TODO: measurable result -->
+          <p class="impact">Impact: Pinpointed the slow datalists, inbox queries and PDF storage behind the sluggish reviewer inbox, and rewrote the inbox query around the assignment table.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>Joget DX7</li><li>MySQL</li><li>BeanShell</li><li>JasperReports</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 Side projects -->
+    <section class="section reveal" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">02 — Side projects</p>
+          <h2 id="projects-title" class="h2">Apps I built on my own</h2>
+        </div>
+        <p class="section-note">Android apps built with Flutter. Each one has an APK you can install and its source code on GitHub.</p>
+      </div>
+
+      <div class="projects">
+        <article class="card project">
+          <div class="project-media"><div class="phone"><img src="assets/img/kawan-amalan.webp" alt="Kawan Amalan home screen with today's progress and a list of sunnah practices" loading="lazy"></div></div>
+          <div class="project-body">
+            <p class="meta">Flutter · Android</p>
+            <h3 class="h3">Kawan Amalan</h3>
+            <p class="small">Records daily sunnah worship and shows weekly progress charts, with adzan times built in.</p>
+            <p class="project-links">
+              <a class="link-accent" href="https://drive.google.com/file/d/1VmjBWCBVLDOagxJC3V3eEQJWwsEO_xLd/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download APK</a>
+              <a class="link-plain" href="https://github.com/aufar05/flutter_kawan_amalan" target="_blank" rel="noopener">GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-media"><div class="phone"><img src="assets/img/dompet-diary.webp" alt="Dompet Diary report screen with income and spending charts" loading="lazy"></div></div>
+          <div class="project-body">
+            <p class="meta">Flutter · Android</p>
+            <h3 class="h3">Dompet Diary</h3>
+            <p class="small">A personal finance diary: log income and spending, then review weekly and monthly reports.</p>
+            <p class="project-links">
+              <a class="link-accent" href="https://drive.google.com/file/d/1CAS-2zyr2rvtPzrqDaD_o6GPkWFXS3_1/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download APK</a>
+              <a class="link-plain" href="https://github.com/aufar05/flutter_dompet_diary" target="_blank" rel="noopener">GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-media"><div class="phone"><img src="assets/img/sefrekuensi.webp" alt="SeFrekuensi personality quiz screen" loading="lazy"></div></div>
+          <div class="project-body">
+            <p class="meta">Flutter · Android</p>
+            <h3 class="h3">SeFrekuensi</h3>
+            <p class="small">Matches people with similar traits through a short personality quiz, then lets them chat.</p>
+            <p class="project-links">
+              <a class="link-accent" href="https://drive.google.com/file/d/1FH99lvCxQVPj5PDKqrVNsieu9T16FuQN/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download APK</a>
+              <a class="link-plain" href="https://github.com/aufar05/flutter_seFrekuensi" target="_blank" rel="noopener">GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-media"><div class="phone"><img src="assets/img/gym-support.webp" alt="Gym Support camera view detecting a dumbbell" loading="lazy"></div></div>
+          <div class="project-body">
+            <p class="meta">Flutter · Object detection</p>
+            <h3 class="h3">Gym Support</h3>
+            <p class="small">Point the camera at gym equipment to identify it and learn how it is used.</p>
+            <p class="project-links">
+              <a class="link-accent" href="https://drive.google.com/file/d/1TfFjFLlWuoVXSX6opgh4cTxvFXUJ0MxM/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download APK</a>
+              <a class="link-plain" href="https://github.com/aufar05/flutter_gym_support" target="_blank" rel="noopener">GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 Skills -->
+    <section class="section reveal" id="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">03 — Skills</p>
+          <h2 id="skills-title" class="h2">What I work with</h2>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="card skill"><h3 class="skill-title">Backend</h3><ul class="chips"><li>Java</li><li>Spring Boot</li></ul></div>
+        <div class="card skill"><h3 class="skill-title">Frontend</h3><ul class="chips"><li>Angular</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>HTML &amp; CSS</li></ul></div>
+        <div class="card skill"><h3 class="skill-title">Mobile</h3><ul class="chips"><li>Flutter</li><li>Dart</li></ul></div>
+        <div class="card skill"><h3 class="skill-title">Data</h3><ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>Liquibase</li></ul></div>
+        <div class="card skill"><h3 class="skill-title">Platform &amp; tooling</h3><ul class="chips"><li>Joget DX7</li><li>Postman</li><li>Git</li><li>SoapUI</li><li>JasperReports</li></ul></div>
+        <div class="card skill"><h3 class="skill-title">Ways of working</h3><ul class="chips"><li>Functional specs (FSD)</li><li>Maker-checker flows</li><li>Cross-team coordination</li></ul></div>
+      </div>
+    </section>
+
+    <!-- 04 About + 05 Contact -->
+    <section class="section duo reveal" aria-label="About and contact">
+      <div class="card about" id="about">
+        <p class="eyebrow">04 — About</p>
+        <h2 class="h2">From mobile apps<br>to banking systems.</h2>
+        <p>I started out building Android apps with Flutter, then moved into banking, where reliability, audit trails and clear documentation matter as much as the code. Today I spend most of my time in Spring Boot and Angular, and I am comfortable going from a Figma screen all the way down to the SQL behind it.</p>
+        <!-- TODO: one sentence on what you want to work on next -->
+        <!-- <p>[One sentence on what you want to work on next.]</p> -->
+      </div>
+
+      <div class="contact" id="contact">
+        <p class="eyebrow">05 — Contact</p>
+        <h2 class="h2">Let's talk.</h2>
+        <p>Happy to chat about engineering roles, collaborations or anything you saw here.</p>
+        <a class="contact-email" href="mailto:aufar.idzan@gmail.com">aufar.idzan@gmail.com</a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="assets/cv/Idzan-Aufar-CV.pdf" download>
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/idzan-aufar-496426224" target="_blank" rel="noopener">
+            LinkedIn<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="container">
+  <div class="site-footer">
+    <p>© 2026 Idzan Aufar</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
